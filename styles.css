@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside{
+    flex: 1;
+    overflow-y: auto;
+}
+
+body {
+    margin: 0;
+    font-family: arial, sans-serif;
+    min-height: 100vh; /* body is at least viewport height */
+}
+
+header, footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+/* prevents header and footer from shrinking */
+header {
+    flex-shrink: 0;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+article {
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+aside {
+    padding: 15px;
+    background-color: #eee;
+    /* Adding a border to clearly separate article and aside */
+    border-left: 1px solid #ccc;
+}
+
+/* Navigation Styling (Flex for horizontal list) */
+nav ul {
+    list-style: none; 
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold hover color */
+    cursor: pointer;
+}
+
+article ul {
+    list-style-type: square;
+    margin-left: 20px;
+    padding-left: 0;
+}
