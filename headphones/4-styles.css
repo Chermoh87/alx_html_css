@@ -315,7 +315,6 @@ body{
   max-width: var(--content-max);
   margin: 0 auto;
   padding: 0 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -325,13 +324,19 @@ body{
   height: 40px;
 }
 
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .footer-right a {
   text-decoration: none;
-  margin-left: 20px;
+  display: inline-flex;
 }
 
 .footer-right .icon {
-  font-size: 28px;
+  font-size: 30px;
   color: #ffffff;
   transition: color 0.2s ease;
 }
@@ -387,7 +392,7 @@ body{
     grid-template-columns: 1fr;
     gap: 50px;
   }
-  
+
   .footer-content {
     flex-direction: column;
     gap: 20px;
