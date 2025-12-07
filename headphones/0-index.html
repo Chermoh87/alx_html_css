@@ -1,158 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEADPHONE</title>
-    <link rel="stylesheet" href="0-styles.css">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Headphones — Home</title>
+
+  <!-- Fonts (Source Sans Pro for now) -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="0-styles.css">
 </head>
 <body>
 
-    <!------   HEADER/NAV  -------->
-    <header class="header">
-        <nav class="nav-container">
+  <!-- header / nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <a href="#" aria-label="Headphones home">
+          <img src="/images/logo_headphones.png" alt="Headphones logo" class="logo-img">
+        </a>
+      </div>
 
-            <div class="logo">
-                <img src="/images/logo_headphones.png" alt="headphone logo">
-            </div>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="#what-we-do">what we do</a></li>
+          <li><a href="#our-results">our results</a></li>
+          <li><a href="#contact">contact us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <ul class="nav-links">
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Our results</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </nav>
-        <section class="hero container">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Nostrum, mollitia!</p>
+  <!-- hero -->
+  <main>
+    <section class="hero" role="region" aria-label="Intro hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content" >
+        <h1 class="hero-title">Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p class="hero-sub">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
 
-            <a href="#" class="btn">CALL TO ACTION</a>
+        <a class="btn-cta" href="#contact">CALL TO ACTION</a>
 
-            <p class="hero-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit Aut<br>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit Culpa!<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-                Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-        </section>
-    </header>
-
-    <!-------------------  WHAT WE DO  ---------------->
-    <section class="services-container">
-        <h2>What we do...</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit Distinctio<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit<br>
-            Lorem ipsum dolor sit amet consectetur adipisicing.<br>
-            Lorem ipsum dolor sit amet consectetur.<br>
-            Lorem ipsum dolor sit amet.
+        <p class="hero-lead">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam minus rem eos, accusamus<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea fuga autem?<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quam?
         </p>
-
-        <div class="service-grid">
-            <div class="service-item">
-
-                <img src="" alt="">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-
-            </div>
-
-            <div class="service-item">
-                <img src="" alt="">
-                <h3>lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-
-            </div>
-
-            <div class="service-item">
-                <img src="" alt="">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-
-            </div>
-
-            <div class="service-item">
-                <img src="" alt="">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur</p>
-
-            </div>
-
-        </div>
-
+      </div>
     </section>
+  </main>
 
-    <!-----  OUR RESULTS  ------->
-    <section class="results">
-        <div class="container">
-            <h2>Our results speak for themselves</h2>
-            <p class="section-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, saepe?<br>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus.
-            </p>
-
-            <div class="results-grid">
-                <div class="results-item">
-                    <div class="pentagon">+2%</div>
-                    <p>Lorem ipsum dolor</p>
-                </div>
-
-                <div class="results-item">
-                    <div class="pentagon">+2%</div>
-                    <p>Lorem, ipsum dolor.</p>
-                </div>
-
-                <div class="results-item">
-                    <div class="pentagon">+2%</div>
-                    <p>Lorem, ipsum dolor.</p>
-                </div>
-
-                <div class="results-item">
-                    <div class="pentagon">+2%</div>
-                    <p>Lorem, ipsum dolor.</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!----------  CONTACT  ----------->
-
-    <section class="contact-container" id="contact">
-        <h2>Contact us</h2>
-
-        <form action="">
-            <label for="name">Name:</label>
-            <input type="text" id="name">
-
-            <label for="email">Email:</label>
-            <input type="email" id="email">
-
-            <label for="message">Your message:</label>
-            <textarea id="message" rows="5"></textarea>
-
-            <button type="submit" class="btn">CALL TO ACTION</button>
-            
-        </form>
-    </section>
-
-    <!--------  FOOTER  ----------->
-    <footer class="footer">
-        <div class="container footer-flex">
-            <img src="/images/logo_headphones.png" alt="Headphones logo" class="footer-logo">
-
-            <div class="socials">
-                <a href="#"><img src="/images/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="images/icon-twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="images/icon-instagram.svg" alt="Instagram"></a>
-            </div>
-        </div>
-
-        <p class="copyright">© Headphones 2025</p>
-    </footer>
 
 </body>
 </html>
